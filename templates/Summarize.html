@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Summarizer</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </head>
+
+   <style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+</style>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+  <span class="navbar-brand mb-0 h1">Extraction based Text Summarizer</span>
+</nav>
+<span class="navbar-brand mb-0 h2">&nbsp&nbsp&nbspEnter text to summarize</span>
+<form action="getfile" method="POST" enctype="multipart/form-data">
+<div class="form-group">
+  <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="6"></textarea>
+  </div>
+  <input type="submit" value="Summarize" class="btn btn-primary btn-block">
+</form>
+  <div class="footer">
+  <span class="navbar-brand mb-0 h8">Created using Bootstrap 4</span>
+</div>
+</body>
+</html>
